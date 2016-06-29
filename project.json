@@ -1,0 +1,33 @@
+{
+    "authors": [ "GuardRex Corporation" ],
+    "buildOptions": {
+        "warningsAsErrors": true
+    },
+    "copyright": "Copyright 2016 GuardRex Corporation",
+    "dependencies": {
+        "System.Console": "4.0.0",
+        "WindowsAzure.Storage": "7.0.2-preview",
+        "Serilog": "2.0.0-*"
+    },
+    "description": "Log exceptions to Azure Table Storage.\r\nCommonly used types:\r\nGuardRex.AzureTableStorageExceptionLogger.ExceptionLog",
+    "frameworks": {
+        "netstandard1.6": {
+            "imports": [ "dnxcore50", "portable-net45+win8" ]
+        }
+    },
+    "packOptions": {
+        "tags": [
+            "logging",
+            "azure table storage",
+            "exception"
+        ],
+        "iconUrl": "https://rexsite.azureedge.net/www-guardrex-com/nugetlogo.png",
+        "licenseUrl": "https://github.com/GuardRex/GuardRex.AzureTableStorageExceptionLogger/blob/master/LICENSE.md",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/GuardRex/GuardRex.AzureTableStorageExceptionLogger"
+        }
+    },
+    "title": "Azure Table Storage Exception Logger",
+    "version": "1.0.0"
+}
