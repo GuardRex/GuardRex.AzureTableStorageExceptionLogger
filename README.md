@@ -18,15 +18,15 @@ If the table is not present it will be created automatically in the storage acco
 
 ### Exception Log Table Schema
 
-| Property     | Type     | Value                               |
-|--------------|----------|-------------------------------------|
-| PartitionKey | string   | Value "EX"                          |
-| RowKey*      | string   | DateTime.MaxValue - DateTime.UtcNow |
-| DT           | DateTime | DateTime.UtcNow                     |
-| MachineName  | string   | Provided                            |
-| Application  | string   | Provided                            |
-| Source       | string   | Provided                            |
-| Description  | string   | Provided                            |
+| Property     | Type     | Value                                      |
+|--------------|----------|--------------------------------------------|
+| PartitionKey | string   | Value "EX"                                 |
+| RowKey*      | string   | DateTime.MaxValue - DateTime.UtcNow        |
+| DT           | DateTime | DateTime.UtcNow                            |
+| MachineName  | string   | Environment.MachineName                    |
+| Application  | string   | Assembly.GetEntryAssembly().GetName().Name |
+| Source       | string   | Provided                                   |
+| Description  | string   | Provided                                   |
 
 *The calculated RowKey sorts the table from oldest to newest, which makes it easier to grab the top X number of entities when querying the table.
 
