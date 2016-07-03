@@ -6,7 +6,7 @@
     "copyright": "Copyright 2016 GuardRex Corporation",
     "dependencies": {
         "System.Console": "4.0.0",
-        "WindowsAzure.Storage": "7.0.2-preview",
+        "WindowsAzure.Storage": "7.1.3-preview",
         "Serilog": "2.0.0-*"
     },
     "description": "Log exceptions to Azure Table Storage.\r\nCommonly used types:\r\nGuardRex.AzureTableStorageExceptionLogger.ExceptionLog",
@@ -29,5 +29,5 @@
         }
     },
     "title": "Azure Table Storage Exception Logger",
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
